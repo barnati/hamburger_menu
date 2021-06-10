@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  font-family: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+  border-radius: 0;
+}
+
+#menu-btn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 150px;
+  height: 80px;
+  z-index: 1000;
+  background-color: black;
+  color: cyan;
+}
+
+#menu-content {
+  position: fixed;
+  top: 80px;
+  left: -300px;
+  width: 300px;
+  height: calc(100vh - 80px);
+  padding: 20px;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: cyan;
+  -webkit-transition: left 600ms ease-in-out;
+  transition: left 600ms ease-in-out;
+}
+
+#menu-content.open {
+  left: 0;
+}
+
+#menu-content li {
+  padding: 10px 0;
+}
+/*# sourceMappingURL=style.css.map */
